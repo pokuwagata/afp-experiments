@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "~/styles/Home.module.css";
 
@@ -27,13 +26,12 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          <Image
+          <img
             className={styles.logo}
             src="https://nextjs.org/icons/next.svg"
             alt="Next.js logo"
             width={180}
             height={38}
-            priority
           />
           <ol>
             <li>
@@ -49,7 +47,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <img
                 className={styles.logo}
                 src="https://nextjs.org/icons/vercel.svg"
                 alt="Vercel logomark"
@@ -74,7 +72,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               aria-hidden
               src="https://nextjs.org/icons/file.svg"
               alt="File icon"
@@ -88,7 +86,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               aria-hidden
               src="https://nextjs.org/icons/window.svg"
               alt="Window icon"
@@ -102,7 +100,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               aria-hidden
               src="https://nextjs.org/icons/globe.svg"
               alt="Globe icon"
