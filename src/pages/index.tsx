@@ -1,4 +1,5 @@
 import Head from "next/head";
+// import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "~/styles/Home.module.css";
 
@@ -26,13 +27,14 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          <img
+          {/* <Image
             className={styles.logo}
             src="https://nextjs.org/icons/next.svg"
             alt="Next.js logo"
             width={180}
             height={38}
-          />
+            priority
+          /> */}
           <ol>
             <li>
               Get started by editing <code>src/pages/index.tsx</code>.
@@ -47,13 +49,13 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              {/* <Image
                 className={styles.logo}
                 src="https://nextjs.org/icons/vercel.svg"
                 alt="Vercel logomark"
                 width={20}
                 height={20}
-              />
+              /> */}
               Deploy now
             </a>
             <a
@@ -72,13 +74,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            {/* <Image
               aria-hidden
               src="https://nextjs.org/icons/file.svg"
               alt="File icon"
               width={16}
               height={16}
-            />
+            /> */}
             Learn
           </a>
           <a
@@ -86,13 +88,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            {/* <Image
               aria-hidden
               src="https://nextjs.org/icons/window.svg"
               alt="Window icon"
               width={16}
               height={16}
-            />
+            /> */}
             Examples
           </a>
           <a
@@ -100,13 +102,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            {/* <Image
               aria-hidden
               src="https://nextjs.org/icons/globe.svg"
               alt="Globe icon"
               width={16}
               height={16}
-            />
+            /> */}
             Go to nextjs.org →
           </a>
         </footer>
