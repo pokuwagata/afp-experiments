@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 
 export default function OptionalChain() {
-  const [data, setData] = useState<{ a: boolean } | undefined>();
+  const [data, setData] = useState<{ a: string } | undefined>();
 
   useEffect(() => {
-    setData({ a: [1].includes(1) });
+    setData({ a: "test" });
   }, []);
 
-  console.log(data?.a);
-  return <div>{JSON.stringify(data?.a)}</div>;
+  return <div>{data?.a}</div>;
 }
