@@ -2,9 +2,9 @@ import { useBarcode } from "next-barcode";
 
 export default function Barcode() {
   const { inputRef } = useBarcode({
-    value: "next-barcode",
+    value: "01234567890123456789012345",
     options: {
-      background: "#ccffff",
+      format: "ITF",
     },
   });
 
